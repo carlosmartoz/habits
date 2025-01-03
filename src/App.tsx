@@ -1,35 +1,52 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
+// App
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <header className="p-4">
+        <nav className="flex justify-between items-center">
+          <h1 className="text-3xl font-sans font-bold text-slate-900">
+            Habits
+          </h1>
+
+          <button
+            type="button"
+            className="px-4 py-2 bg-blue-700 font-sans font-medium rounded text-slate-50 text-base transition-all duration-300 hover:bg-blue-800 ease-in-out"
+          >
+            Add new task
+          </button>
+        </nav>
+      </header>
+
+      <main className="p-4">
+        <article>
+          <section>
+            <ul className="flex flex-col gap-2">
+              <li className="text-base text-slate-900 font-sans font-normal">
+                Task #1
+              </li>
+
+              <li className="text-base text-slate-900 font-sans font-normal">
+                Task #1
+              </li>
+
+              <li className="text-base text-slate-900 font-sans font-normal">
+                Task #1
+              </li>
+
+              <li className="text-base text-slate-900 font-sans font-normal">
+                Task #1
+              </li>
+            </ul>
+          </section>
+        </article>
+      </main>
+
+      <footer className="text-center text-base text-slate-900 font-normal font-sans">
+        Copyright © 2025 Carlos Martínez
+      </footer>
     </>
-  )
+  );
 }
 
-export default App
+// Export
+export default App;

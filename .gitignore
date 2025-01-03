@@ -7,18 +7,26 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
+# fILES
+.pnp
+.env
 dist
-dist-ssr
 *.local
+.pnp.js
+dist-ssr
+yarn.lock
+.env.local
+.gitignore
+node_modules
+package-lock.json
 
 # Editor directories and files
-.vscode/*
-!.vscode/extensions.json
 .idea
-.DS_Store
 *.suo
-*.ntvs*
-*.njsproj
 *.sln
 *.sw?
+*.ntvs*
+.vscode/*
+.DS_Store
+*.njsproj
+!.vscode/extensions.json
