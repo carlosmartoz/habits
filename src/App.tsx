@@ -22,19 +22,27 @@ function App() {
           <section>
             <ul className="flex flex-col gap-2">
               <li className="text-base text-slate-900 font-sans font-normal">
-                Task #1
+                <section>
+                  <span>Task #1</span>
+                </section>
               </li>
 
               <li className="text-base text-slate-900 font-sans font-normal">
-                Task #1
+                <section>
+                  <span>Task #1</span>
+                </section>
               </li>
 
               <li className="text-base text-slate-900 font-sans font-normal">
-                Task #1
+                <section>
+                  <span>Task #1</span>
+                </section>
               </li>
 
               <li className="text-base text-slate-900 font-sans font-normal">
-                Task #1
+                <section>
+                  <span>Task #1</span>
+                </section>
               </li>
             </ul>
           </section>
